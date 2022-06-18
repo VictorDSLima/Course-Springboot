@@ -11,11 +11,5 @@ import com.victordslima.course.entities.User;
 @RequestMapping(value = "/users")
 public class UserController {
 	
-	@GetMapping
-	public ResponseEntity<User> findAll() {
-		User u1 = new User(null, "Maria Brown", "maria@gmail.com", "988888888", "123456");
-
-		return ResponseEntity.ok().body(u1);
-	}
 
 }
